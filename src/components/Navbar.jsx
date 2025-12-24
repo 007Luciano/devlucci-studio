@@ -35,13 +35,12 @@ const Navbar = () => {
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2">
           <img
-            src="/logo.png"
+            src={`${process.env.PUBLIC_URL}/logo.png`}
             alt="DevLucci logo"
             className="h-7"
             whileHover={{ scale: 1.05, rotate: -3 }}
           />
         </Link>
-
         {/* Desktop Navigation */}
         <div className="hidden md:flex space-x-6">
           {links.map((link) => (

@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/devlucci-studio/static/css/main.c2aba4ad.css",
-    "main.js": "/devlucci-studio/static/js/main.0261d48b.js",
+    "main.js": "/devlucci-studio/static/js/main.fd921921.js",
     "static/js/488.f3b7e784.chunk.js": "/devlucci-studio/static/js/488.f3b7e784.chunk.js",
     "service-worker.js": "/devlucci-studio/service-worker.js",
     "index.html": "/devlucci-studio/index.html",
     "main.c2aba4ad.css.map": "/devlucci-studio/static/css/main.c2aba4ad.css.map",
-    "main.0261d48b.js.map": "/devlucci-studio/static/js/main.0261d48b.js.map",
+    "main.fd921921.js.map": "/devlucci-studio/static/js/main.fd921921.js.map",
     "488.f3b7e784.chunk.js.map": "/devlucci-studio/static/js/488.f3b7e784.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c2aba4ad.css",
-    "static/js/main.0261d48b.js"
+    "static/js/main.fd921921.js"
   ]
 }

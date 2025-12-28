@@ -337,37 +337,92 @@ const Home = () => {
         </div>
       </section>
 
-      {/* =========================
+      {/* ========================= 
           PROCESS
-         ========================= */}
+        ========================= */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-extrabold" style={{ color: COLORS.primary }}>Our Process</h2>
-            <p className="mt-4 text-slate-600">A collaborative flow that keeps deadlines, value, and clarity in focus.</p>
+            <h2
+              className="text-3xl md:text-4xl font-extrabold"
+              style={{ color: COLORS.primary }}
+            >
+              Our Process
+            </h2>
+            <p className="mt-4 text-slate-600">
+              A structured and transparent workflow designed to ensure clarity,
+              collaboration, and measurable results.
+            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { step: "Discover", Icon: Search, color: `linear-gradient(135deg, ${COLORS.secondary}, #0891B2)` },
-              { step: "Design", Icon: Brush, color: `linear-gradient(135deg, #2563EB, ${COLORS.primary})` },
-              { step: "Develop", Icon: Code2, color: `linear-gradient(135deg, ${COLORS.accent}, #F59E0B)` },
-              { step: "Deliver", Icon: Rocket, color: `linear-gradient(135deg, #14B8A6, #0D9488)` },
+              {
+                step: "Discover",
+                Icon: Search,
+                color: `linear-gradient(135deg, ${COLORS.secondary}, #0891B2)`,
+                description:
+                  "We learn about your goals, audience, and challenges to align our design and development approach.",
+              },
+              {
+                step: "Design",
+                Icon: Brush,
+                color: `linear-gradient(135deg, #2563EB, ${COLORS.primary})`,
+                description:
+                  "Our designers craft visually appealing, user-centered designs that balance beauty and usability.",
+              },
+              {
+                step: "Develop",
+                Icon: Code2,
+                color: `linear-gradient(135deg, ${COLORS.accent}, #F59E0B)`,
+                description:
+                  "We bring ideas to life with clean code, ensuring performance, scalability, and responsiveness.",
+              },
+              {
+                step: "Deliver",
+                Icon: Rocket,
+                color: `linear-gradient(135deg, #14B8A6, #0D9488)`,
+                description:
+                  "We launch your project, provide ongoing support, and ensure your digital experience continues to thrive.",
+              },
             ].map((p, i) => (
-              <motion.div key={i} initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeInUp} className="bg-slate-50 p-8 rounded-2xl shadow-sm">
-                <div style={{ width: 60, height: 60 }} className="rounded-xl mb-4 flex items-center justify-center" aria-hidden>
-                  <div style={{ background: p.color }} className="w-full h-full rounded-xl flex items-center justify-center shadow">
+              <motion.div
+                key={i}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                variants={fadeInUp}
+                whileHover={{ scale: 1.02 }}
+                className="bg-slate-50 p-8 rounded-2xl shadow-sm relative"
+              >
+                <div
+                  style={{ width: 60, height: 60 }}
+                  className="rounded-xl mb-4 flex items-center justify-center"
+                  aria-hidden
+                >
+                  <div
+                    style={{ background: p.color }}
+                    className="w-full h-full rounded-xl flex items-center justify-center shadow"
+                  >
                     <p.Icon className="w-5 h-5 text-white" />
                   </div>
                 </div>
-                <h4 className="font-semibold mb-2" style={{ color: COLORS.primary }}>{p.step}</h4>
-                <p className="text-slate-600 text-sm">We run workshops, rapid design sprints, and iterate quickly with validated testing.</p>
-                <span className="absolute top-4 right-6 text-4xl font-extrabold text-slate-200 opacity-20 select-none">{i + 1}</span>
+
+                <h4 className="font-semibold mb-2" style={{ color: COLORS.primary }}>
+                  {p.step}
+                </h4>
+
+                <p className="text-slate-600 text-sm">{p.description}</p>
+
+                <span className="absolute top-4 right-6 text-4xl font-extrabold text-slate-200 opacity-20 select-none">
+                  {i + 1}
+                </span>
               </motion.div>
             ))}
           </div>
         </div>
       </section>
+
 
       {/* =========================
           TESTIMONIALS

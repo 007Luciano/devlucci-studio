@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import {
   Palette,
   Code,
@@ -196,21 +197,29 @@ const Services = () => {
                 step: "Discover",
                 Icon: Search,
                 color: `linear-gradient(135deg, ${COLORS.secondary}, #0891B2)`,
+                description:
+                  "We learn about your goals, audience, and challenges to align our design and development approach.",
               },
               {
                 step: "Design",
                 Icon: Brush,
                 color: `linear-gradient(135deg, #2563EB, ${COLORS.primary})`,
+                description:
+                  "Our designers craft visually appealing, user-centered designs that balance beauty and usability.",
               },
               {
                 step: "Develop",
                 Icon: Code2,
                 color: `linear-gradient(135deg, ${COLORS.accent}, #F59E0B)`,
+                description:
+                  "We bring ideas to life with clean code, ensuring performance, scalability, and responsiveness.",
               },
               {
                 step: "Deliver",
                 Icon: Rocket,
                 color: `linear-gradient(135deg, #14B8A6, #0D9488)`,
+                description:
+                  "We launch your project, provide ongoing support, and ensure your digital experience continues to thrive.",
               },
             ].map((p, i) => (
               <motion.div
@@ -237,10 +246,8 @@ const Services = () => {
                 >
                   {p.step}
                 </h4>
-                <p className="text-slate-600 text-sm">
-                  We work closely with you at every stage to ensure alignment
-                  with your goals and expectations.
-                </p>
+                <p className="text-slate-600 text-sm">{p.description}</p>
+
                 <span className="absolute top-4 right-6 text-4xl font-extrabold text-slate-200 opacity-20 select-none">
                   {i + 1}
                 </span>
@@ -262,13 +269,11 @@ const Services = () => {
             Tell us about your project and we’ll help you design and build a
             reliable digital solution. Free consultation • No obligation.
           </p>
-          <a
-            href="/contact"
-            className="inline-block rounded-lg px-6 py-3 font-semibold shadow-lg"
-            style={{ background: "#fff", color: COLORS.primary }}
-          >
-            Start a Conversation
-          </a>
+          <Link to="/contact">
+              <button className="rounded-lg px-6 py-3 font-semibold shadow-lg" style={{ background: "#fff", color: COLORS.primary }}>
+              Start Your Project
+              </button>
+          </Link>
         </div>
 
         <div

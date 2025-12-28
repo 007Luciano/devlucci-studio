@@ -1,20 +1,36 @@
-# DevLucci Studio
+# DevLucci
 
-Official website for DevLucci, a digital design and development studio
-providing scalable solutions for NGOs, government institutions, and SMEs.
+DevLucci is a digital technology studio focused on building clean, modern, and scalable digital products for businesses and individuals.
 
-## Live Demo
+Specializing in transforming ideas into functional, user-friendly, and visually appealing digital solutions.
+
+## 🌍 Services
+- UI/UX Design
+- Website Development
+- Web Applications
+- Business & Corporate Websites
+- Technical Consulting
+
+## 🛠 Tech Stack
+- React
+- JavaScript
+- HTML5
+- CSS3
+- Git & GitHub
+
+## 🚀 Live Demo
 https://007luciano.github.io/devlucci-studio/#
 
-## Tech Stack
-- React
-- Tailwind CSS
-- Framer Motion
-- JavaScript
+## 📌 Project Status
+Active – continuously improving design, performance, and content.
 
-## Status
-Production-ready client showcase.
+## 👨‍💻 Developer
+**Lucky Fatch**  
+Back-end Software Engineering (ALX & Holberton)  
+Computer Engineering Graduate  
 
 ## Contact
 Email: lucky.h.fatch@gmail.com 
 Phone: +265 999 566 1361
+
+DevLucci — Building reliable digital experiences.

@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { Lightbulb, Globe, Users, Target } from "lucide-react";
 
 const COLORS = {
@@ -226,13 +227,11 @@ const About = () => {
             Partner with a studio that values clarity, quality, and long-term
             success. Let’s discuss how we can support your next project.
           </p>
-          <a
-            href="/contact"
-            className="inline-block rounded-lg px-6 py-3 font-semibold shadow-lg"
-            style={{ background: "#fff", color: COLORS.primary }}
-          >
-            Work With Us
-          </a>
+          <Link to="/contact">
+              <button className="rounded-lg px-6 py-3 font-semibold shadow-lg" style={{ background: "#fff", color: COLORS.primary }}>
+              Start Your Project
+              </button>
+          </Link>
         </div>
 
         <div

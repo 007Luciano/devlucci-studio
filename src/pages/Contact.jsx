@@ -131,9 +131,9 @@ const Contact = () => {
                     required
                   ></textarea>
                 </div>
-                <div>
+                {/* <div>
                   Captcha comes here
-                  </div>
+                  </div> */}
                 <button
                   type="submit"
                   className="w-full bg-[#1e3a5f] hover:bg-[#2c4d7a] text-white font-medium py-3 px-6 rounded-lg transition-colors duration-300"

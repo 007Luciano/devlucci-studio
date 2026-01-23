@@ -134,7 +134,7 @@ const Home = () => {
                     className="inline-flex items-center gap-3 rounded-lg px-6 py-3 font-semibold shadow-lg"
                     style={{
                       background: `linear-gradient(90deg, ${COLORS.secondary}, #0891B2)`,
-                      color: "#05263B",
+                      color: "#ffffff",
                       boxShadow: "0 10px 30px rgba(6,182,212,0.18)",
                     }}
                   >
